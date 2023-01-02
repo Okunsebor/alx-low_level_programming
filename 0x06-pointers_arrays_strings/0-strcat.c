@@ -2,19 +2,21 @@
 
 /**
  * _strcat - concatenate two string
- * @dest: first string
- * @src: second string to catenate
- * Return: dest
+ * @dest: char
+ * @src: char
+ * Return: char
  */
 
 char *_strcat(char *dest, char *src)
 {
 	char *s = dest;
 
+
 	while (*dest != '\0')
 	{
 		dest++;
 	}
+
 
 	while (*src != '\0')
 	{
@@ -23,6 +25,6 @@ char *_strcat(char *dest, char *src)
 		src++;
 	}
 
-	*dest != '\0';
+	*dest = '\0';
 	return (s);
 }
