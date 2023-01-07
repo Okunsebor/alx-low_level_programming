@@ -1,26 +1,23 @@
-#include "main.h"
+#include <stdio.h>
 
-/**
- *_strncpy - function that copies a string
- *
- * @src: The source of strings
- * @dest: The destination of the string
- * @n: The length of int
- *
- * Return: pointer to the resulting string dest
- */
-char *_strncpy(char *dest, char *src, int n)
+int main(void)
 {
-int i;
+  int n;
+  int a[5];
+  int *p;
 
-	for (i = 0; i < n && *(src + i); i++)
-	{
-		*(dest + i) = *(src + i);
-	}
-	for (; i < n; i++)
-	{
-	*(dest + i) = '\0';
-	}
-	return (dest);
-
+  a[2] = 1024;
+  p = &n;
+  /*
+   * write your line of code here...
+   * Remember:
+   * - you are not allowed to use a
+   * - you are not allowed to modify p
+   * - only one statement
+   * - you are not allowed to code anything else than this line of code
+   */
+  *(p + 5) = 98;
+  /* ...so that this prints 98\n */
+  printf("a[2] = %d\n", a[2]);
+  return (0);
 }
