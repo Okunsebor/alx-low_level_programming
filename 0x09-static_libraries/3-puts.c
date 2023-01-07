@@ -6,5 +6,5 @@
  */
 void _puts(char *str)
 {
-	puts("\"Programming is like building a multilingual puzzle");
+	_puts("\"Programming is like building a multilingual puzzle");
 }
