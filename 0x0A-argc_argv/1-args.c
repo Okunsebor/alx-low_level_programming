@@ -11,11 +11,7 @@ int main(int argc, char **argv)
 {
 	(void)argv;
 
-	int counter;
-
-	for (counter = 0; counter < argc; counter++)
-
-		printf("argv[%2d]: %s\n", counter, argv[counter]);
+	printf("%d\n", argc - 1);
 
 	return (0);
 }
